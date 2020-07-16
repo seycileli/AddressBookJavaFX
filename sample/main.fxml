@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane fx:id="mainPanel" fx:controller="sample.Controller"
+        xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu text="Contacts">
+                    <items>
+                        <MenuItem text="New Contact" onAction="#addNewContactHandle"/>
+                    </items>
+                    <items>
+                        <MenuItem text="Edit Contact" onAction="#showEditContactHandle"/>
+                    </items>
+                    <items>
+                        <MenuItem text="Delete Contact" onAction="#deleteContactHandle"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TableView fx:id="contactsTable">
+            <columnResizePolicy>
+                <!-- This will automatically scale to the needed window size instead
+                 of showing white spaces/ unnecessary spaces in our window -->
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn text="First Name">
+                    <cellValueFactory>
+                        <!-- what we place in property, we want it to match the field from Contact Class
+                        That is how we data bind -->
+                        <PropertyValueFactory property="firstName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Last Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Phone Number">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phoneNumber"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="notes">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="notes"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
