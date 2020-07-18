@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+<contact>
+	<first_name>My future employer</first_name>
+	<last_name>future employers last name</last_name>
+	<phone_number>123-456-7890</phone_number>
+	<notes>we'll edit the number in the future</notes>
+</contact>
+<contact>
+	<first_name>Seyhan</first_name>
+	<last_name>Cileli</last_name>
+	<phone_number>(098)-7654-321</phone_number>
+	<notes>not my number</notes>
+</contact>
+<contact>
+	<first_name>John</first_name>
+	<last_name>Smith</last_name>
+	<phone_number>+1-(888)-456-3210</phone_number>
+	<notes>Because everyone knows 1 John Smith</notes>
+</contact>
+<contact>
+	<first_name>Jane</first_name>
+	<last_name>Doe</last_name>
+	<phone_number>000-000-321</phone_number>
+	<notes>Along with 1 Jane Doe</notes>
+</contact>
+<contact>
+	<first_name>Michael</first_name>
+	<last_name>Jordan</last_name>
+	<phone_number>230-2323-230</phone_number>
+	<notes>Not Michael Jordan</notes>
+</contact>
+</contacts>
