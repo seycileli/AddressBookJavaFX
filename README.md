@@ -1,5 +1,7 @@
 # AddressBookJavaFX
 
+Keep track of your tasks and never miss another Due Date
+
 This is a simple Address Book Application created with JavaFX
 
 User can create a new contact(s)
